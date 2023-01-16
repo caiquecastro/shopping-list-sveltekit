@@ -24,7 +24,7 @@
 <tbody class="divide-y divide-gray-100 border-t border-gray-100">
   {#each data.rows as inventory}
     <tr>
-      <th class="px-6 py-4 font-medium text-gray-900">{inventory.items?.name}</th>
+      <th class="px-6 py-4 font-medium text-gray-900">{inventory.item?.name}</th>
       <td class="px-6 py-4">{inventory.quantity}</td>
       <td class="flex justify-end gap-4 px-6 py-4 font-medium"><a href="/">Delete</a><a href="/" class="text-primary-700">Edit</a></td>
     </tr>

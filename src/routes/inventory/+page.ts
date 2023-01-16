@@ -5,10 +5,10 @@ import { error } from '@sveltejs/kit';
 export async function load() {
     const result = await supabase
         .from('inventory')
-        .select('quantity, items (name)');
+        .select('quantity, item:items(name)');
 
     if (result.error) {
-        throw error(500, 'Something happened');
+        throw error(result.status, result.error.message);
     }
 
     return {
