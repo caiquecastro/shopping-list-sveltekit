@@ -1,4 +1,5 @@
 import { supabase } from '$lib/db';
+import { error } from '@sveltejs/kit';
 
 /** @type {import('./$types').PageLoad} */
 export async function load({ params }) {
@@ -7,6 +8,10 @@ export async function load({ params }) {
         .select('id, name, category')
         .eq('id', params.id)
         .maybeSingle();
+
+    if (!item) {
+        throw error(404, 'Not found');
+    }
 
     return {
         item: item,
