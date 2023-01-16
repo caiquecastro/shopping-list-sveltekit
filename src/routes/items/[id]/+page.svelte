@@ -13,7 +13,6 @@
   </a>
 </div>
 
-
 <dl>
   <dt>Name</dt>
   <dd>{data.item.name}</dd>
