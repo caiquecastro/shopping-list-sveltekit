@@ -27,7 +27,9 @@
         <th class="px-6 py-4 font-medium text-gray-900">{inventory.item?.name}</th>
         <td class="px-6 py-4">{inventory.quantity}</td>
         <td class="flex justify-end gap-4 px-6 py-4 font-medium">
-          <a href="/">Delete</a>
+          <form action="/inventory/{inventory.id}?/delete" method="post">
+            <button>Delete</button>
+          </form>
           <a href="/" class="text-primary-700">Edit</a>
         </td>
       </tr>
