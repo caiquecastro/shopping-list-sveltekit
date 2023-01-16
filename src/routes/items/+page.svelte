@@ -27,7 +27,7 @@
           {item.name}
         </th>
         <td class="px-6 py-4">
-          {item.category}
+          {item.category.name}
         </td>
         <td class="flex justify-end gap-4 px-6 py-4 font-medium">
           <form action="/items/{item.id}?/delete" method="post">
