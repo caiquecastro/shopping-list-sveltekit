@@ -2,11 +2,9 @@
   import '../app.css';
 </script>
 
-<nav class="relative flex flex-wrap items-center justify-between px-2 py-3 bg-primary-900 mb-4">
-  <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
-    <div
-      class="w-full relative flex justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start"
-    >
+<nav class="relative flex flex-wrap items-center justify-between px-4 py-3 bg-primary-900 mb-4">
+  <div class="container mx-auto flex flex-wrap items-center justify-between">
+    <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
       <a
         class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
         href="/"
@@ -36,6 +34,6 @@
     </div>
   </div>
 </nav>
-<div class="container mx-auto">
+<div class="container mx-auto px-4">
   <slot />
 </div>

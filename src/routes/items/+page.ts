@@ -3,7 +3,8 @@ import { error } from '@sveltejs/kit';
 
 /** @type {import('./$types').PageLoad} */
 export async function load() {
-  const result = await supabase.from('items')
+  const result = await supabase
+    .from('items')
     .select('id, name, category:categories(id, name)')
     .order('name');
 

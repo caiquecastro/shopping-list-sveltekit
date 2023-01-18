@@ -7,7 +7,8 @@ export const actions = {
     const formData = await request.formData();
     const quantity = formData.get('quantity');
 
-    const { error, status } = await supabase.from('inventory')
+    const { error, status } = await supabase
+      .from('inventory')
       .update({ quantity })
       .eq('id', params.id);
 

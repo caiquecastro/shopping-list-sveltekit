@@ -8,7 +8,8 @@ export const actions = {
     const name = formData.get('name');
     const category = formData.get('category');
 
-    const { error, data, status } = await supabase.from('items')
+    const { error, data, status } = await supabase
+      .from('items')
       .insert({ name, category_id: category });
 
     if (error) {
