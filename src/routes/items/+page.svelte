@@ -1,4 +1,6 @@
 <script>
+  import { enhance } from '$app/forms';
+
   /** @type {import('./$types').PageData} */
   export let data;
 </script>
@@ -25,7 +27,7 @@
           {item.category.name}
         </td>
         <td class="flex justify-end gap-4 px-6 py-4 font-medium">
-          <form action="/items/{item.id}?/delete" method="post">
+          <form action="/items/{item.id}?/delete" method="post" use:enhance>
             <button>Delete</button>
           </form>
           <a href="items/{item.id}/edit" class="text-primary-700">Edit</a>
