@@ -4,7 +4,6 @@ import { fail, redirect } from '@sveltejs/kit';
 /** @type {import('./$types').Actions} */
 export const actions = {
   update: async ({ request, params }: { params: Record<string, string> }) => {
-    console.log('update');
     const formData = await request.formData();
     const name = formData.get('name');
     const category = formData.get('category');
