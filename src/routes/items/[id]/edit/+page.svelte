@@ -1,4 +1,6 @@
 <script>
+  import FormInput from '$lib/components/form-input.svelte';
+
   /** @type {import('./$types').PageData} */
   export let data;
 </script>
@@ -10,12 +12,9 @@
 <div class="max-w-xl mx-auto">
   <form action="/items/{data.item.id}?/update" method="post" class="space-y-5">
     <div>
-      <label for="name" class="mb-1 block text-sm font-medium text-gray-700">Item</label>
-      <input
-        type="text"
+      <FormInput
         id="name"
-        name="name"
-        class="input"
+        label="Item"
         placeholder="Arroz"
         value={data.item.name}
       />
