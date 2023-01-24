@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body, #app {
+  @apply h-full;
+}
+
+#app {
+  @apply flex flex-col;
+}
+
 .button {
   @apply bg-primary-500 px-5 py-2.5 rounded-lg border border-primary-500;
   @apply text-center text-sm text-white font-medium;

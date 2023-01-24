@@ -11,11 +11,7 @@
   <form action="/inventory" method="post" class="space-y-5">
     <div>
       <label for="item" class="mb-1 block text-sm font-medium text-gray-700">Item</label>
-      <select
-        id="item"
-        name="item"
-        class="input"
-      >
+      <select id="item" name="item" class="input">
         {#each data.items as item}
           <option value={item.id}>{item.name}</option>
         {/each}
@@ -23,13 +19,7 @@
     </div>
     <div>
       <label for="quantity" class="mb-1 block text-sm font-medium text-gray-700">Quantidade</label>
-      <input
-        type="text"
-        id="quantity"
-        name="quantity"
-        class="input"
-        placeholder="10"
-      />
+      <input type="text" id="quantity" name="quantity" class="input" placeholder="10" />
     </div>
     <button class="button">Salvar</button>
   </form>

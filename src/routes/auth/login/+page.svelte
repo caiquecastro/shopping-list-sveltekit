@@ -2,7 +2,8 @@
     import FormInput from "$lib/components/form-input.svelte";
 </script>
 
-<div class="mx-auto max-w-xl">
+<div class="m-auto max-w-xl py-4 w-full">
+  <h1 class="text-3xl mb-4">Login</h1>
   <form action="/auth/login" class="space-y-5" method="post">
     <div>
       <FormInput

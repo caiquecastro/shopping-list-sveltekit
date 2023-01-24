@@ -11,21 +11,11 @@
   <form action="/items" method="post" class="space-y-5">
     <div>
       <label for="name" class="mb-1 block text-sm font-medium text-gray-700">Item</label>
-      <input
-        type="text"
-        id="name"
-        name="name"
-        class="input"
-        placeholder="Arroz"
-      />
+      <input type="text" id="name" name="name" class="input" placeholder="Arroz" />
     </div>
     <div>
       <label for="category" class="mb-1 block text-sm font-medium text-gray-700">Categoria</label>
-      <select
-        id="category"
-        name="category"
-        class="input"
-      >
+      <select id="category" name="category" class="input">
         {#each data.categories as category}
           <option value={category.id}>{category.name}</option>
         {/each}

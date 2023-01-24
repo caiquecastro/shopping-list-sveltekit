@@ -34,6 +34,6 @@
     </div>
   </div>
 </nav>
-<div class="container mx-auto px-4">
+<div class="container mx-auto px-4 flex-1 flex flex-col">
   <slot />
 </div>
