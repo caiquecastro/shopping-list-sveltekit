@@ -1,6 +1,6 @@
 # Shopping List
 
-Application created with SvelteKit, Tailwind and [SailboatUI](https://sailboatui.com/) to demonstrate Svelte development.
+Application created with [SvelteKit](https://kit.svelte.dev/), [Tailwind](https://tailwindcss.com/) and [SailboatUI](https://sailboatui.com/) to demonstrate Svelte development.
 
 ## Developing
 
