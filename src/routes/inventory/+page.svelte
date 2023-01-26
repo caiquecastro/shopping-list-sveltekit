@@ -44,11 +44,21 @@
           <tr>
             <th class="px-6 py-4 font-medium text-gray-900">{inventory.item?.name}</th>
             <td class="px-6 py-4">
-              <form action="/inventory/{inventory.id}?/update" method="post" class="inline" use:enhance>
+              <form
+                action="/inventory/{inventory.id}?/update"
+                method="post"
+                class="inline"
+                use:enhance
+              >
                 <button name="quantity" value={inventory.quantity - 1}>-</button>
               </form>
               {inventory.quantity}
-              <form action="/inventory/{inventory.id}?/update" method="post" class="inline" use:enhance>
+              <form
+                action="/inventory/{inventory.id}?/update"
+                method="post"
+                class="inline"
+                use:enhance
+              >
                 <button name="quantity" value={inventory.quantity + 1}>+</button>
               </form>
             </td>
