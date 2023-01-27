@@ -23,4 +23,7 @@ jobs:
       id: pnpm-install
       with:
         version: 7
+
+    - name: Lint
+      run: npm run lint
         
