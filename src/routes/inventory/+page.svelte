@@ -16,14 +16,15 @@
       <li>
         <a
           href="/inventory?filter=toBuy"
-          class="inline-flex cursor-pointer items-center gap-2 px-1 py-3 hover:text-primary-700 relative after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full {data.filter === '' ? 'text-gray-500' : 'text-primary-700 after:bg-primary-700'} ">
+          class="tab {data.filter === '' ? 'text-gray-500' : 'tab--active'}"
+        >
           Em falta
         </a>
       </li>
       <li>
         <a
           href="/inventory"
-          class="relative after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full inline-flex cursor-pointer items-center gap-2 px-1 py-3 hover:text-primary-700 {data.filter === 'toBuy' ? 'text-gray-500' : 'text-primary-700 after:bg-primary-700'} "
+          class="tab {data.filter === 'toBuy' ? 'text-gray-500' : 'tab--active'} "
         >
           Todos
         </a>
