@@ -1,5 +1,7 @@
 <script>
   import FormInput from '$lib/components/form-input.svelte';
+  let email = '';
+  let password = '';
 </script>
 
 <div class="m-auto max-w-xl py-4 w-full">
