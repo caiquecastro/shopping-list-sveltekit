@@ -42,5 +42,8 @@
   "type": "module",
   "volta": {
     "node": "18.13.0"
+  },
+  "dependencies": {
+    "@supabase/auth-helpers-sveltekit": "^0.8.7"
   }
 }
