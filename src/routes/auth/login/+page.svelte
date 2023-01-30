@@ -53,6 +53,6 @@
       />
       <label for="remember" class="text-sm font-medium text-gray-700">Remember me</label>
     </div>
-    <button type="button" class="button">Entrar</button>
+    <button class="button" disabled={loading}>Entrar</button>
   </form>
 </div>
