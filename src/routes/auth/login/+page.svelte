@@ -1,5 +1,6 @@
 <script lang="ts">
   import { supabase } from '$lib/db';
+  import { goto } from '$app/navigation';
   import FormInput from '$lib/components/form-input.svelte';
 
   let loading = false;
@@ -14,6 +15,8 @@
       if (error) {
         throw error;
       }
+
+      await goto('/');
     } catch (err) {
       if (err instanceof Error) {
         error = err.message;
