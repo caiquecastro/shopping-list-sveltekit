@@ -29,6 +29,9 @@
 
 <div class="m-auto max-w-xl py-4 w-full">
   <h1 class="text-3xl mb-4">Login</h1>
+  {#if error}
+    <div class="rounded-md bg-red-50 p-4 text-sm text-red-500 mb-3"><b>Error alert</b> {error}</div>
+  {/if}
   <form action="/auth/login" class="space-y-5" method="post" on:submit|preventDefault={handleLogin}>
     <div>
       <FormInput
