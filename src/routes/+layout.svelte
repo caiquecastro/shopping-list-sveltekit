@@ -17,23 +17,23 @@
     </div>
     <div class="lg:flex flex-grow items-center" id="example-navbar-warning">
       <ul class="flex flex-col lg:flex-row list-none ml-auto">
-        <li class="nav-item">
-          <a
-            class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-            href="/inventory"
-          >
-            Inventário
-          </a>
-        </li>
-        <li class="nav-item">
-          <a
-            class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-            href="/items"
-          >
-            Todos itens
-          </a>
-        </li>
         {#if data.session}
+          <li class="nav-item">
+            <a
+              class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+              href="/inventory"
+            >
+              Inventário
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+              href="/items"
+            >
+              Todos itens
+            </a>
+          </li>
           <li class="nav-item">
             <form action="/auth/logout" method="post">
               <button
