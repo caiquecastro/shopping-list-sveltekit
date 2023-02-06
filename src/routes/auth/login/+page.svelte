@@ -60,5 +60,6 @@
       <label for="remember" class="text-sm font-medium text-gray-700">Remember me</label>
     </div>
     <button class="button" disabled={loading}>Entrar</button>
+    <a href="/auth/register" class="text-primary-800 text-sm block">Cadastre-se</a>
   </form>
 </div>
