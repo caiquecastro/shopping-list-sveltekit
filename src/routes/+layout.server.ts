@@ -2,10 +2,7 @@ import type { LayoutServerLoad } from './$types';
 import { getServerSession } from '@supabase/auth-helpers-sveltekit';
 import { redirect } from '@sveltejs/kit';
 
-const authRoutes = [
-  '/auth/login',
-  '/auth/register',
-];
+const authRoutes = ['/auth/login', '/auth/register'];
 
 export const load: LayoutServerLoad = async (event) => {
   const session = await getServerSession(event);
