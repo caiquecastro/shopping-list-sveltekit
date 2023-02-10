@@ -52,7 +52,7 @@
         bind:value={password}
       />
     </div>
-    <button class="button">Cadastre-se</button>
+    <button class="button" disabled={loading}>Cadastre-se</button>
     <a href="/auth/login" class="text-primary-800 text-sm block">Login</a>
   </form>
 </div>
