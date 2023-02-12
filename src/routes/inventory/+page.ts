@@ -1,8 +1,8 @@
 import { supabase } from '$lib/db';
 import { error } from '@sveltejs/kit';
+import type { PageLoad } from './$types';
 
-/** @type {import('./$types').PageLoad} */
-export async function load({ url }) {
+export const load = (async ({ url }) => {
   const filter = url.searchParams.get('filter') ?? '';
 
   const query = supabase
@@ -24,4 +24,4 @@ export async function load({ url }) {
     rows: result.data ?? [],
     filter,
   };
-}
+}) satisfies PageLoad;
