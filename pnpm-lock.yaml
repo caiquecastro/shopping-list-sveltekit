@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@supabase/auth-helpers-sveltekit': ^0.8.7
-  '@supabase/supabase-js': ^2.4.0
+  '@supabase/supabase-js': ^2.8.0
   '@sveltejs/adapter-auto': ^1.0.1
   '@sveltejs/adapter-node': ^1.1.7
   '@sveltejs/kit': ^1.5.0
@@ -26,8 +26,8 @@ specifiers:
   vitest: ^0.28.4
 
 devDependencies:
-  '@supabase/auth-helpers-sveltekit': 0.8.7_fjsejuhspb6db5pg2h5ujso754
-  '@supabase/supabase-js': 2.4.0
+  '@supabase/auth-helpers-sveltekit': 0.8.7_h4fmw4dd6b3xkulak4k3c7hqqu
+  '@supabase/supabase-js': 2.8.0
   '@sveltejs/adapter-auto': 1.0.1_@sveltejs+kit@1.5.0
   '@sveltejs/adapter-node': 1.1.7_@sveltejs+kit@1.5.0
   '@sveltejs/kit': 1.5.0_svelte@3.55.1+vite@4.1.1
@@ -392,21 +392,21 @@ packages:
       rollup: 3.10.0
     dev: true
 
-  /@supabase/auth-helpers-shared/0.2.4_fjsejuhspb6db5pg2h5ujso754:
+  /@supabase/auth-helpers-shared/0.2.4_h4fmw4dd6b3xkulak4k3c7hqqu:
     resolution: {integrity: sha512-c+hi3N6DhjPTzjXGOokre4gmMZOqt0f1ORrwZwi2s07pk3cbkmn77DwwVtlYMNi3oZNYRQqAfxJu83UzpJrrmg==}
     peerDependencies:
       '@supabase/supabase-js': ^2.0.4
     dependencies:
-      '@supabase/supabase-js': 2.4.0
+      '@supabase/supabase-js': 2.8.0
     dev: true
 
-  /@supabase/auth-helpers-sveltekit/0.8.7_fjsejuhspb6db5pg2h5ujso754:
+  /@supabase/auth-helpers-sveltekit/0.8.7_h4fmw4dd6b3xkulak4k3c7hqqu:
     resolution: {integrity: sha512-sFXWaeyTVWK70Aekw+plqN+f8si2MqV4PbcEunqZ1H/QfujxxnDfG26j+O+eQ/ue84UFrJutNY+iB3DsTlXlCg==}
     peerDependencies:
       '@supabase/supabase-js': ^2.0.4
     dependencies:
-      '@supabase/auth-helpers-shared': 0.2.4_fjsejuhspb6db5pg2h5ujso754
-      '@supabase/supabase-js': 2.4.0
+      '@supabase/auth-helpers-shared': 0.2.4_h4fmw4dd6b3xkulak4k3c7hqqu
+      '@supabase/supabase-js': 2.8.0
     dev: true
 
   /@supabase/functions-js/2.0.0:
@@ -417,8 +417,8 @@ packages:
       - encoding
     dev: true
 
-  /@supabase/gotrue-js/2.7.0:
-    resolution: {integrity: sha512-DDa1H254a3n3GZfao/UmHTVEUl9OORSuVJ7ZwRLSdiXLyXzspX2WvqMcdYJE23IvjBe9B51i86D7jJ15/lpMQg==}
+  /@supabase/gotrue-js/2.12.1:
+    resolution: {integrity: sha512-r8Jfq8FvP6q4kp7sI33X1RWfEEHzJFu9uM1Q6HgiDVkY89NNgqYy2kxaRGtidPFllND7vpcJUcpoWS5oq+4u0g==}
     dependencies:
       cross-fetch: 3.1.5
     transitivePeerDependencies:
@@ -433,8 +433,8 @@ packages:
       - encoding
     dev: true
 
-  /@supabase/realtime-js/2.3.1:
-    resolution: {integrity: sha512-AX4pzZozVPvHAWfPcKl0UWj19pqwogD9TnCEHq1x/6oQjVoqA3n6H+1Ea2of9MheSroajHguaQMen3xLEoWrug==}
+  /@supabase/realtime-js/2.6.0:
+    resolution: {integrity: sha512-tOVulMobhpxyDuu8VIImpL8FXmZOKsGNOSyS5ihJdj2xYmPPvYG+D2J51Ewfl+MFF65tweiB6p9N9bNIW1cDNA==}
     dependencies:
       '@types/phoenix': 1.5.4
       websocket: 1.0.34
@@ -450,13 +450,13 @@ packages:
       - encoding
     dev: true
 
-  /@supabase/supabase-js/2.4.0:
-    resolution: {integrity: sha512-fouVDoTcxM4/xEsh2iaR0wr0liwER7Pth8pvmbqqm7JVDLd2Z3+ie+k9fesg0OAd8VR1plOi80gdjxYm/ZIYMA==}
+  /@supabase/supabase-js/2.8.0:
+    resolution: {integrity: sha512-uzf4J+qAKdUMhB2tnJl6BrQRUQBinwjJ2eWo2ZsDw9EUUP5JcHsxTamiq6p91DpqzmTIRg3xRAT+bItTzbfa0w==}
     dependencies:
       '@supabase/functions-js': 2.0.0
-      '@supabase/gotrue-js': 2.7.0
+      '@supabase/gotrue-js': 2.12.1
       '@supabase/postgrest-js': 1.1.1
-      '@supabase/realtime-js': 2.3.1
+      '@supabase/realtime-js': 2.6.0
       '@supabase/storage-js': 2.1.0
       cross-fetch: 3.1.5
     transitivePeerDependencies:
