@@ -2,6 +2,12 @@ import { supabase } from '$lib/db';
 import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
 
+type ItemRelation = { name: string } | { name: string }[] | null;
+
+const firstRelation = (relation: ItemRelation) => {
+  return Array.isArray(relation) ? relation[0] : relation;
+};
+
 export const load = (async ({ url }) => {
   const filter = url.searchParams.get('filter') ?? '';
 
@@ -21,7 +27,10 @@ export const load = (async ({ url }) => {
   }
 
   return {
-    rows: result.data ?? [],
+    rows: (result.data ?? []).map((row) => ({
+      ...row,
+      item: firstRelation(row.item),
+    })),
     filter,
   };
 }) satisfies PageLoad;

@@ -1,8 +1,8 @@
 <script lang="ts">
   import '../app.css';
-  import type { LayoutServerLoad } from './$types';
+  import type { LayoutData } from './$types';
 
-  export let data: LayoutServerLoad;
+  export let data: LayoutData;
 </script>
 
 <nav class="relative flex flex-wrap items-center justify-between px-4 py-3 bg-primary-900 mb-4">

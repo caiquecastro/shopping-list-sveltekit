@@ -1,8 +1,8 @@
 import { getSupabase } from '@supabase/auth-helpers-sveltekit';
 import { redirect } from '@sveltejs/kit';
+import type { Actions } from './$types';
 
-/** @type {import('./$types').PageLoad} */
-export const actions = {
+export const actions: Actions = {
   default: async (event) => {
     const { supabaseClient } = await getSupabase(event);
 

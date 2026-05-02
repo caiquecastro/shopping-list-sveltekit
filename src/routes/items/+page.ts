@@ -1,8 +1,14 @@
 import { supabase } from '$lib/db';
 import { error } from '@sveltejs/kit';
+import type { PageLoad } from './$types';
 
-/** @type {import('./$types').PageLoad} */
-export async function load() {
+type CategoryRelation = { id: string; name: string } | { id: string; name: string }[] | null;
+
+const firstRelation = (relation: CategoryRelation) => {
+  return Array.isArray(relation) ? relation[0] : relation;
+};
+
+export const load = (async () => {
   const result = await supabase
     .from('items')
     .select('id, name, category:categories(id, name)')
@@ -13,6 +19,9 @@ export async function load() {
   }
 
   return {
-    items: result.data ?? [],
+    items: (result.data ?? []).map((item) => ({
+      ...item,
+      category: firstRelation(item.category),
+    })),
   };
-}
+}) satisfies PageLoad;

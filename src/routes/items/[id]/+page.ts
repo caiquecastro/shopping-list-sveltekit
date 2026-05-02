@@ -1,8 +1,8 @@
 import { supabase } from '$lib/db';
 import { error } from '@sveltejs/kit';
+import type { PageLoad } from './$types';
 
-/** @type {import('./$types').PageLoad} */
-export async function load({ params }) {
+export const load = (async ({ params }) => {
   const { data: item } = await supabase
     .from('items')
     .select('id, name, category')
@@ -16,4 +16,4 @@ export async function load({ params }) {
   return {
     item: item,
   };
-}
+}) satisfies PageLoad;
