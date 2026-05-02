@@ -2,8 +2,9 @@
   "name": "shopping-list-svelte",
   "version": "0.0.1",
   "private": true,
+  "packageManager": "pnpm@7.33.7",
   "engines": {
-    "node": ">=18 <19"
+    "node": ">=22 <23"
   },
   "scripts": {
     "dev": "vite dev",
@@ -42,6 +43,7 @@
   },
   "type": "module",
   "volta": {
-    "node": "18.13.0"
+    "node": "22.11.0",
+    "pnpm": "7.33.7"
   }
 }
