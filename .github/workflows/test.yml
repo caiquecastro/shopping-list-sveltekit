@@ -13,16 +13,17 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+
       - name: Use Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: 22.x
 
-      - uses: pnpm/action-setup@v4
-        name: Install pnpm and dependencies
+      - name: Install dependencies
         id: pnpm-install
-        with:
-          run_install: true
+        run: pnpm install
 
       - name: Lint
         run: pnpm lint
